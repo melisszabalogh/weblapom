@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="hu">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virágok</title>
+  <style>
+    :root {
+      --rose-bg: #f7eef2;
+      --rose-strong: #7b455c;
+      --rose-soft: #c27277;
+      --rose-card: #fff9fb;
+      --rose-accent: #e7c6d4;
+      --text: #3e2a32;
+      --muted: #69545f;
+      --table-head: #f3d8e4;
+      --shadow: 0 12px 28px rgba(123, 69, 92, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #f9f3f5 0%, #f1e1e8 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page-shell {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px 24px 20px;
+    }
+
+    .hero {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(123, 69, 92, 0.08);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 32px 28px 24px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: #f4dfe8;
+      color: var(--rose-strong);
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 4vw, 4rem);
+      color: var(--rose-strong);
+      letter-spacing: 0.04em;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .image-wrap {
+      margin: 0 auto 32px;
+      text-align: center;
+      background: rgba(255,255,255,0.6);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 18px;
+      width: 900px;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    .section-box {
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(123, 69, 92, 0.08);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 28px 24px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      color: var(--rose-strong);
+      font-size: clamp(1.5rem, 2vw, 2.2rem);
+    }
+
+    .flower-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .flower-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 86px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #fffafc, #f6e5ee);
+      border: 1px solid rgba(123, 69, 92, 0.12);
+      color: var(--rose-strong);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 18px rgba(123, 69, 92, 0.07);
+    }
+
+    .flower-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 22px rgba(123, 69, 92, 0.12);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--rose-card);
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid rgba(123, 69, 92, 0.12);
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(123, 69, 92, 0.1);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--table-head);
+      color: var(--rose-strong);
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 18px 0 10px;
+      font-size: 0.96rem;
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        padding: 18px 14px 12px;
+      }
+
+      .hero,
+      .section-box {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      th, td {
+        padding: 10px 12px;
+        font-size: 0.92rem;
+      }
+    }
+  </style>
+ </head>
+ <body>
+    <div class="page-shell">
+      <header class="hero">
+        <h1>Virágok</h1>
+        <p class="intro">
+Mindig is vonzódtam a virágok szépségéhez, ezért döntöttem úgy, hogy bemutatom a négy kedvencemet: a liliomot, a bazsarózsát, az orchideát és a tulipánt, amelyek mindannyian a maguk csodás módján különlegesek.        </p>
+      </header>
+
+      <div class="image-wrap">
+        <img src="viragok.jpg" alt="Virágok képe" />
+      </div>
+
+      <section class="section-box">
+        <h2>A bemutatott virágok</h2>
+        <div class="flower-list">
+          <a class="flower-link" href="Liliom.html">Liliom</a>
+          <a class="flower-link" href="Bazsarozsa.html">Bazsarózsa</a>
+          <a class="flower-link" href="Orhideea.html">Orchidea</a>
+          <a class="flower-link" href="Tulipan.html">Tulipán</a>
+        </div>
+      </section>
+
+      <section class="section-box">
+        <h2>Összefoglaló</h2>
+        <table>
+            <tr>
+                <th>Virág neve</th>
+                <th>Évszak</th>
+                <th>Gondozás nehézsége</th>
+                <th>Szimbólum / jelentés</th>
+            </tr>
+            <tr>
+                <td>Liliom</td>
+                <td>június–augusztus</td>
+                <td>10/4 (könnyű–közepes)</td>
+                <td>ártatlanság, tisztaság, megújulás</td>
+            </tr>
+            <tr>
+                <td>Bazsarózsa</td>
+                <td>május–június</td>
+                <td>10/5 (közepes)</td>
+                <td>gazdagság, szerencse, boldog házasság</td>
+            </tr>
+            <tr>
+                <td>Orchidea</td>
+                <td>február–március</td>
+                <td>10/7 (közepes–nehéz)</td>
+                <td>szépség, szerelem, elegancia</td>
+            </tr>
+            <tr>
+                <td>Tulipán</td>
+                <td>március–május</td>
+                <td>10/2 (könnyű)</td>
+                <td>nőiesség, szerelem, élet, megújulás</td>
+            </tr>
+        </table>
+      </section>
+
+      <footer>Készítette: Balogh Melissza</footer>
+    </div>
+ </body>
+</html>
